@@ -1,0 +1,74 @@
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background-color: beige;
+    color: #1a1a1a;
+    line-height: 1.7;
+}
+.navbar {
+    width: 75%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.hero h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #777
+}
+.intro {
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.Assignments h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.Assignments p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+
+.assignment-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card {
+    display: inline-block;
+    background-color: brown;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: palevioletred;
+}
+footer {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+

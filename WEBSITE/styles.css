@@ -17,7 +17,27 @@ body {
     margin: auto;
 }
 
+pre code {
+      display: block;
+      background-color: #f4f4f4; /* light gray background */
+      padding: 15px;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace; /* monospace font for code */
+      overflow-x: auto; /* scroll horizontally if long */
+      color: #1a1a1a; /* text color */
+    }
 
+   .output {
+      display: block;
+      background-color: #e8e8e8; /* light gray for output */
+      color: #1a1a1a;
+      padding: 15px;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      margin-top: 10px;
+      overflow-x: auto;
+      white-space: pre;
+    }   
 /* Headings (bold + warm neutral tones) */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;

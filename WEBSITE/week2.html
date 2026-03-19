@@ -1,22 +1,85 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+    <title>Week 2 - Gearbox Academy</title>
+     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1> Training Week 2</h1>
+    <h1>Introduction to Embedded Systems</h1>
     <p> I did recap of how to use the Terminal Function</p>
     <h2> Assignment 2</h2>
+
     <p> I built a geometry calculator using Object-Oriented 
-      Programming (OOP) concepts in Python. I was able to run a code that successfully calculated
-    the area of a circle, square, rectangle and right angled triangle.From this assignment I was able
-    to understand the concept of inheritance and polyporphism. The program demonstrated inheritance by creating a base class Shape 
+      Programming (OOP) concepts in Python. I wrote and ran my code on Thonny. </p>
+
+    <pre><code>import math
+class Shape:
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def __init__(self, diameter):
+        self.diameter = diameter
+    def area(self):
+        radius = self.diameter / 2
+        return math.pi * radius ** 2
+        pass
+
+class Square(Shape):
+    def __init__(self, length):
+        self.length = length
+    def area(self):
+        return self.length ** 2 
+        pass
+
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    def area(self):
+        return self.length * self.width
+        pass
+
+class RightTriangle(Shape):
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+    def area(self):
+        return 0.5 * self.base * self.height
+        pass
+
+circle = Circle(10)
+square = Square(5)
+rectangle = Rectangle(4, 6)
+triangle = RightTriangle(3, 8)
+triangle2 = RightTriangle(2,10)
+
+print("Circle area:", circle.area())
+print("Square area:", square.area())
+print("Rectangle area:", rectangle.area())
+print("Triangle area:", triangle.area())
+print("Triangle2 area:", triangle2.area())</code></pre>
+
+   <p>The output when running the code was:</p>
+  
+  <pre class="output">Circle area: 78.53981633974483
+Square area: 25
+Rectangle area: 24
+Triangle area: 12.0
+Triangle2 area: 10.0</pre>
+
+    <p> From this assignment I was able
+    to understand the concept of inheritance and polyporphism.
+    </p> 
+    <p> The program demonstrated inheritance by creating a base class Shape 
     and allowing other classes such as Circle, Square, Rectangle, and RightTriangle to inherit from it. 
     These subclasses reuse the structure of the parent class while defining their own properties.
-    Polymorphism was demonstrated by how each subclass overrides the area() method of the Shape class
+    </p>
+    <p> Polymorphism was demonstrated by how each subclass overrides the area() method of the Shape class
     and implements it differently depending on the shape. When the area() method is called on different objects, 
     Python executes the appropriate method for that specific shape, allowing the same method 
     name to calculate different areas depending on the object.</p>
+
   </body>
   
 </html>

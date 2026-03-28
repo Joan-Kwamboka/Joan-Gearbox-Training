@@ -84,35 +84,51 @@ a:hover {
 
 
 /* Lists */
-ul {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-
-/* Code-like text (Git commands) */
-strong {
+.simple-list {
+    margin: 20px 0;
+    padding-left: 25px;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.7;
     color: #1a1a1a;
-    background-color: #f3e5dc; /* soft warm highlight */
-    padding: 3px 6px;
-    border-radius: 5px;
-    font-family: monospace;
+}
+
+.simple-list li {
+    margin-bottom: 12px;
+}
+
+.simple-list li strong {
+    font-family: inherit;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+strong {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 600;
+    color: #1a1a1a;
+    background: none;
+    padding: 0;
+    border-radius: 0;
 }
 
 
 /* Images (consistent soft style) */
-img {
-    max-width: 100%;
-    height: auto;
+.image-pair {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.image2,
+.image3 {
+    width: 45%;
+    height: auto;
     border-radius: 10px;
     border: 2px solid #d2b48c;
 }
-
 
 /* Sections */
 section {

@@ -30,9 +30,56 @@
     </ul>
      <h2> Assignment </h2>
 
-    <p> For this assignment, the objective was to learn about Classes, Inheritance and Polymorphism. </p>
-    <p> I built a geometry calculator using Object-Oriented 
-      Programming (OOP) concepts in Python. I wrote and ran my code on Thonny. </p>
-  </body>
+    <p> For this assignment, the objective was to learn about Functions, Objectives and Linking with Clang. </p>
+    <p> I built a geometry calculator C program.The program contained two files; main.c and geometry.c </p>
+
+<p> The code in geometry.c was:</p>
+ <pre><code>
+#include <stdio.h>
+
+double circle_area(double diameter) {
+    double radius = diameter / 2.0;
+    return 3.141592653589793 * radius * radius;
+}
+
+double square_area(double length) {
+    return length * length;
+}
+
+double rectangle_area(double length, double width) {
+    return length * width;
+}
+
+double triangle_area(double base, double height) {
+    return 0.5 * base * height;
+}
+ </code></pre>
+<p> The code in main.c was:</p>
+ <pre><code>
+  #include <stdio.h>
+
+double circle_area(double diameter);
+double square_area(double length);
+double rectangle_area(double length, double width);
+double triangle_area(double base, double height);
+
+int main() {
+    printf("Circle area: %.2f\n", circle_area(10));
+    printf("Square area: %.2f\n", square_area(5));
+    printf("Rectangle area: %.2f\n", rectangle_area(4, 6));
+    printf("Triangle area: %.2f\n", triangle_area(3, 8));
+    return 0;
+}
+ </code></pre>
+
+ <p>The output after running the code was:</p>
   
-</html>
+  <pre class="output">
+Circle area: 78.54
+Square area: 25.00
+Rectangle area: 24.00
+Triangle area: 12.00
+</pre>
+
+  </body>
+</html> 
